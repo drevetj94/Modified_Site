@@ -1,0 +1,35 @@
+<div class="container">
+
+  <div>
+    <acme-navbar creation-date="main.creationDate"></acme-navbar>
+  </div>
+
+  <div class="jumbotron text-center">
+    <h1>Salut <b>In Sun We Trust</b></h1>
+<br>
+    <p class="lead">
+      <img src="assets/images/angif_octopus.gif" alt="I'm Yeoman"><br><br>
+	Petit quizz, les amis.<br><br>
+	A quelle niveau se situe la motivation de Jérôme à l'idée d'intégrer <b>ISWT</b> ?
+   	<br><br>
+
+    	<div ng-controller="MainController">
+        <label class="lead">Pas motivé du tout ?</label>
+        <input type="checkbox" ng-model="showContent"/>
+        <p ng-show="showContent"><font color="red">Complètement faux !</font></p>
+    	</div>
+
+    	<div ng-controller="MainController">
+        <label class="lead">Moyennement motivé ?</label>
+        <input type="checkbox" ng-model="showContent"/>
+        <p ng-show="showContent"><font color="red">Pas vrai du tout !</font></p>
+    	</div>
+
+    	<div ng-controller="MainController">
+        <label class="lead">Très motivé ?</label>
+        <input type="checkbox" ng-model="showContent"/>
+        <p ng-show="showContent"><font color="green">Bingo !</font></p>
+    	</div>
+ </p> 
+  </div>
+</div>
